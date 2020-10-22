@@ -4,10 +4,10 @@ class PaperBall {
         isStatic:false,
         restitution:0.3,
         friction:0.5,
-        density:1.1
+        density:0.2
     }
-    this.body = Bodies.circle(x, y,20,options);
-  this.radius=20;
+    this.body = Bodies.circle(x, y,50,options);
+  this.radius=70;
     World.add(world, this.body);
     this.image = loadImage("paper.png");
   }
