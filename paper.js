@@ -1,13 +1,13 @@
 class PaperBall {
-  constructor(x, y) {
+  constructor(x, y,r) {
     var options = {
         isStatic:false,
         restitution:0.3,
         friction:0.5,
-        density:0.2
+        density:0.7
     }
-    this.body = Bodies.circle(x, y,50,options);
-  this.radius=70;
+    this.body = Bodies.circle(x, y,(r-20)/2,options);
+  this.r=r;
     World.add(world, this.body);
     this.image = loadImage("paper.png");
   }
@@ -19,7 +19,7 @@ class PaperBall {
   
 
    
-    image(this.image, 0, 0, this.radius*2, this.radius*2);
+    image(this.image, 0, 0, this.r, this.r);
     pop();
   }
 }
