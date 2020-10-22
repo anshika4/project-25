@@ -4,7 +4,7 @@ class dustbin
 	{
 		this.x=x;
 		this.y=y;
-		this.dustbinWidth=10;
+		this.dustbinWidth=100;
 		this.dustbinHeight=200;
 		this.wallThickness=20;
 		this.angle=0;	
