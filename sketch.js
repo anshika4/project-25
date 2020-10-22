@@ -13,7 +13,7 @@ function setup() {
 	createCanvas(1600, 700);
   dustbin2=createSprite(1200,540,300,100);
   dustbin2.addImage(dustbinImg);
-  dustbin2.scale=0.9;
+  dustbin2.scale=0.8;
 
 	engine = Engine.create();
   world = engine.world;
