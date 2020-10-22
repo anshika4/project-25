@@ -11,7 +11,7 @@ dustbinImg=loadImage("dustbingreen.png");
 
 function setup() {
 	createCanvas(1600, 700);
-  dustbin2=createSprite(1200,520,300,100);
+  dustbin2=createSprite(1200,540,300,100);
   dustbin2.addImage(dustbinImg);
   dustbin2.scale=0.9;
 
@@ -21,7 +21,7 @@ function setup() {
 	ground = new Ground(700,665,1900,10);
   bin=new dustbin (1200,650,200,10);
  
-  ball=new PaperBall(200,450);
+  ball=new PaperBall(450,450);
   
 	//Create the Bodies Here.
 
